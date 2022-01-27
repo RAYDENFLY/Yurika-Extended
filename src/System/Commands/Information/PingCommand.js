@@ -26,4 +26,22 @@ module.exports = class PingCommand extends Command {
       return msg.channel.send({ embeds: [CreateEmbed('warn', '⛔ | An error occured')] });
     }
   }
+  
+  /**
+   *
+   * @param {import('discord.js').CommandInteraction} interaction
+   */
+  async executeSlash(interaction) {
+    try { 
+      const message = await interaction.editReply('Getting info...');
+      const embed = CreateEmbed('info')
+        .addField('⏳ Latency ', `__**${message.createdTimestamp - msg.createdTimestamp}ms**__`)
+        .addField('💓 API', `__**${Math.floor(this.client.ws.ping)}ms**__`)
+        .setTimestamp();
+      setTimeout(() => { message.edit({ content: null, embeds: [embed] }); }, 5000);
+    } catch (e) {
+      this.client.logger.error(e.message);
+      return interaction.editReply({ embeds: [CreateEmbed('warn', '⛔ | An error occured')] });
+    }
+    }
 };

@@ -1,4 +1,3 @@
-const http = require('http');
 const { logger } = require('../../Extended/Logger');
 require('dotenv').config();
 var express = require('express');

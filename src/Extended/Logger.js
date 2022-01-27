@@ -28,5 +28,5 @@ log4js.configure(
     },
   },
 );
-const logger = log4js.getLogger('NOTEBLOCK');
+const logger = log4js.getLogger('SAYA CLIENT');
 module.exports = { logger };

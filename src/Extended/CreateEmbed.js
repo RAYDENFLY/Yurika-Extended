@@ -8,7 +8,7 @@ const Color = {
 function CreateEmbed(color, message) {
   const embed = new MessageEmbed()
     .setColor(Color[color])
-    .setFooter(`©SayaClienr ${new Date().getFullYear()}`);
+    .setFooter(`©SayaClient ${new Date().getFullYear()}`);
   if (message) embed.setDescription(message);
   return embed;
 }

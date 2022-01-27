@@ -1,0 +1,6 @@
+{
+   "query":"⛔ | Sorry, I didn't find anything.",
+   "noload":"⛔ | Sorry, An error occurred loading the song.",
+   "nojoin":"⛔ | you must join the voice to use the music command",
+   "playlistload":"☑ | Added to playlist successfully",
+}

@@ -43,7 +43,7 @@ module.exports = class PlayCommand extends Command {
           for (const track of MusicTracks.tracks) {
             player.queue.add(track);
           }
-          msg.channel.send({ embeds: [CreateEmbed('info', `☑ | Added Playlist ${MusicTracks.playlist.name} [${msg.author}] [\`${MusicTracks.tracks.length} tracks\`]`)] });
+          msg.channel.send({ embeds: [CreateEmbed('info', `☑ | Added Playlist ${MusicTracks.playlist.name} [${msg.author}`)] });
         } else {
           player.queue.add(MusicTracks.tracks[0]);
           msg.channel.send({ embeds: [CreateEmbed('info', `☑ | Added track \`${MusicTracks.tracks[0].title}\` [${msg.author}]`)] });

@@ -14,7 +14,7 @@ module.exports = class Readylistener extends Listener {
 
   async exec() {
     this.client.logger.info(`CLIENT READY WITH ${this.client.guilds.cache.size} GUILDS`);
-    this.client.user.setActivity(`GrowNote's | ${this.client.config.prefix} help`, { type: 5 });
+    this.client.user.setActivity(`Turu`, { type: 5 });
     this.client.erela.init(this.client.user.id);
     if (!config.updateSlash) return;
     /* eslint no-restricted-syntax: "off" */

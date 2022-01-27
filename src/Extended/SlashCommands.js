@@ -17,4 +17,7 @@ module.exports = [
   new SlashCommandBuilder()
     .setName('resume')
     .setDescription('resume current paused track'),
+  new SlashCommandBuilder()
+    .setName('stats')
+    .setDescription('view stats bot'),
 ];
