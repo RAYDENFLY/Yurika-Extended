@@ -1,5 +1,6 @@
 /* eslint no-restricted-syntax: "off" */
 const { Command } = require('discord-akairo');
+const USER_ID = require('../../Config/config').USER_ID
 const { CreateEmbed } = require('../../../Extended/CreateEmbed');
 const { MessageEmbed } = require('discord.js');
 const { MessageActionRow, MessageButton } = require('discord.js');
@@ -40,7 +41,7 @@ module.exports = class EvalCommand extends Command {
       ],
     });
   } async exec(message, { command }) {
-    if (message.author.id !== "USER_ID") return;
+    if (message.author.id !== USER_ID ) return;
     try {
       let raw
       let teks = command
@@ -53,7 +54,7 @@ module.exports = class EvalCommand extends Command {
         .setTitle('Output: ')
         .setDescription("```js\n" + await output + "```")
       message.channel.send({ components: [confirm], embeds: [confirmbed] })
-      const filter = i => "USER_ID"
+      const filter = i => USER_ID
       const collector = message.channel.createMessageComponentCollector({ filter, max: 1 });
       collector.on('collect', async i => {
         if (i.customId === 'evalyes') {

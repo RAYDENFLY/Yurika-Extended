@@ -1,5 +1,10 @@
 # Yurika logs 24-February-2022
 
+- Upstream 2.8.0 (2.80)
+- Bug Fixed Improvement
+- 
+# Yurika logs 24-February-2022
+
 - Upstream 2.7.5 (2.75)
 - Fixed Eval Commands ( Thanks for Demura AI for help me fix eval commands )
 - Update Config ( Add USER_ID )
