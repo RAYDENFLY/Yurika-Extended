@@ -1,6 +1,6 @@
 {
   "name": "yurikaextended",
-  "version": "2.6.0",
+  "version": "2.7.5",
   "description": "use discord akairo",
   "main": "src/System/Client/ExtendedClient",
   "repository": "https://github.com/RAYDENFLY/Yurika-Extended.git",
