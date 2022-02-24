@@ -24,14 +24,19 @@ module.exports = class StatsCommand extends Command {
 **Recent Update**
 \`\`\`js
 Add & Edited: 
-- Upstream to 2.6.0
-- Change CPU server to AMD EPYC 7B12
-- Boost Project (Bot, Web, Lavalink)
-- Fix StatsCommands
+# Yurika logs 24-February-2022
+
+- Upstream 2.8.0 (2.80)
+- Bug Fixed Improvement
+- 
+# Yurika logs 24-February-2022
+
+- Upstream 2.7.5 (2.75)
+- Fixed Eval Commands ( Thanks for Demura AI for help me fix eval commands )
+- Update Config ( Add USER_ID )
 
 Bug: 
-Eval Command Dead, Changer Language Dead, Bot Dead.
-When Fixed Eval ? i down know
+Changer Language Dead.
 \`\`\`
 `)],
       });
