@@ -21,3 +21,7 @@
 Selesai
 
 **jangan lupa untuk berkontribusi dalam project ini dan memberikan bintang, Terima Kasih**
+
+# THANKS FOR
+**[DemuraAI](https://github.com/DemuraAIdev) Thanks For Helping Me**
+**[Kagchi](https://github.com/KagChi/) Thanks For Code**
